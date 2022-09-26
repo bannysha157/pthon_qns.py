@@ -1,0 +1,30 @@
+
+
+def back_to_home(directions):
+    no_North=0
+    no_East=0
+    no_West=0
+    no_South=0
+    for i in directions:
+        if(i=="N"):
+            no_North=no_North+1
+        elif(i=="E"):
+            no_East=no_East+1
+        elif(i=="W"):
+            no_West=no_West+1
+        elif(i=="S"):
+            no_South=no_South+1
+        else:
+            pass
+
+    if(no_North==no_East==no_West==no_South):
+        return True
+    else:
+        return False
+
+
+directions=input("\n Enter list of directions")
+if(back_to_home(directions)==True):
+    print("set of directions will lead him back to Starting point")
+else:
+      print("set of directions will not lead him back to Starting point")
