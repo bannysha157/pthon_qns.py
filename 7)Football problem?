@@ -1,0 +1,11 @@
+#foot ball points:
+
+points={"win":3,"draw":1,"loss":0}
+
+def foot_ball_points(no_of_wins,no_of_draws,no_of_losses):
+    total_points=no_of_wins*points["win"]+ no_of_draws* points["draw"] + no_of_losses *points["loss"]
+    return total_points
+
+print(foot_ball_points(3,4,2))
+print(foot_ball_points(5,0,2))
+print(foot_ball_points(0,0,1))
